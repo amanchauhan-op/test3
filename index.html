@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Trending Now in India - Google Trends</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    #trends-widget {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 900px;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>🔥 Trending Now in India</header>
+
+  <div id="trends-widget"></div>
+
+  <!-- ✅ Official Google Trends Embed Script -->
+  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2431_RC01/embed_loader.js"></script>
+  <script type="text/javascript">
+    trends.embed.renderWidget("dailytrends", "", {
+      geo: "IN", // Shows daily trending searches in India
+      guestPath: "https://trends.google.com:443/trends/embed/"
+    });
+  </script>
+
+  <footer>
+    Data powered by <a href="https://trends.google.com/trending?geo=IN" target="_blank">Google Trends</a>
+  </footer>
+</body>
+</html>
