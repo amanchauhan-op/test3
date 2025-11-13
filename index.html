@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Daily Trending Searches in India</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 40px;
+      color: #202124;
+    }
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    p {
+      color: #5f6368;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    #trends-widget {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Daily Trending Searches in India</h1>
+  <p>Updated automatically by Google Trends</p>
+
+  <div id="trends-widget"></div>
+
+  <!-- ✅ Official Google Trends Embed Script -->
+  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2431_RC01/embed_loader.js"></script>
+  <script type="text/javascript">
+    trends.embed.renderWidget("dailytrends", "", {
+      geo: "IN", // Country code for India
+      guestPath: "https://trends.google.com:443/trends/embed/"
+    });
+  </script>
+
+  <footer>
+    Data Source: <a href="https://trends.google.com/trending?geo=IN" target="_blank">Google Trends India</a>
+  </footer>
+</body>
+</html>
